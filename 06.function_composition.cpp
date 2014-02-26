@@ -36,7 +36,7 @@ auto square = [](auto x) { return x * x; };
 float normal_fn(int x) { return (float)(x*x);};
 auto inc2 = arg1+2;
 
-auto composed_fn = xpcpp::compose(inc, square, inc2, square);
+auto composed_fn = xpcpp::compose(inc, normal_fn, inc2, square);
 
 int main()
 {
