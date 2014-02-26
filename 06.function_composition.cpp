@@ -25,7 +25,7 @@ template <> struct compose_fn<>
 template <typename Fn1, typename... FnN>
 auto compose(Fn1 f1, FnN... fn) { return compose_fn<Fn1, FnN...>(f1, fn...); };
 
-} // end of xpcpp
+} // end of namespace xpcpp
 
 #include <iostream>
 #include <boost/phoenix.hpp>
